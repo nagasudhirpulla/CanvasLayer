@@ -64,12 +64,12 @@
 
       function update() {
         // clear previous canvas contents
-        var canvasWidth = canvasLayer.canvas.width;
-        var canvasHeight = canvasLayer.canvas.height;
-        context.clearRect(0, 0, canvasWidth, canvasHeight);
+        ////var canvasWidth = canvasLayer.canvas.width;
+        ////var canvasHeight = canvasLayer.canvas.height;
+        ////context.clearRect(0, 0, canvasWidth, canvasHeight);
 
         // we like our rectangles hideous
-        context.fillStyle = 'rgba(230, 77, 26, 1)';
+        ////context.fillStyle = 'rgba(230, 77, 26, 1)';
         
         /* We need to scale and translate the map for current view.
          * see https://developers.google.com/maps/documentation/javascript/maptypes#MapCoordinates
@@ -97,8 +97,8 @@
         context.translate(-offset.x, -offset.y);
 
         // project rectLatLng to world coordinates and draw
-        var worldPoint = mapProjection.fromLatLngToPoint(rectLatLng);
-        context.fillRect(worldPoint.x, worldPoint.y, rectWidth, rectWidth);
+        ////var worldPoint = mapProjection.fromLatLngToPoint(rectLatLng);
+        ////context.fillRect(worldPoint.x, worldPoint.y, rectWidth, rectWidth);
       }
 
       document.addEventListener('DOMContentLoaded', init, false);
